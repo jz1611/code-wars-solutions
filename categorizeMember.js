@@ -29,3 +29,12 @@
     Example Output
     ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 */
+
+function openOrSenior(data){
+    return data.map(member => {
+        let age = member[0];
+        let handicap = member[1];
+
+        return age >= 55 && handicap > 7 ? 'Senior' : 'Open';
+    });
+}
